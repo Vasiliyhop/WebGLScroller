@@ -1,0 +1,48 @@
+@import './colors';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color;
+    font-size: 30px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.app-container {
+    .canvas-app-demo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        @import './performance';
+
+        .canvas-wrapper {
+            position: relative;
+            margin-top: 20px;
+            padding: 10px;
+            z-index: 2;
+            background-color: $background-color;
+            border: 2px solid $main-color;
+
+            @import './canvas';
+            @import './speaker';
+            @import './intro';
+        }
+    }
+
+    .gui-container {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        z-index: 10;
+        user-select: none;
+    }
+}

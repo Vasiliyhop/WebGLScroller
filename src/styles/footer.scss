@@ -1,0 +1,43 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid #b5d6ff;
+    margin-top: 16px;
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+
+    .shortcuts-details {
+        font-size: 16px;
+        font-weight: bold;
+        user-select: none;
+
+        .shortcuts-summary {
+            outline: none;
+            color: $scroll-track2;
+        }
+        .shortcuts-info {
+            margin: 8px 16px;
+            font-weight: normal;
+            color: $main-color;
+            mark {
+                padding: 0 4px;
+                background-color: $scroll-track2;
+                font-weight: bold;
+                color: $scroll-gradient-2;
+                margin-right: 20px;
+            }
+            span {
+                margin-left: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    small {
+        font-size: 16px;
+        color: $scroll-track2;
+    }
+}

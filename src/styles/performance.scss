@@ -1,0 +1,20 @@
+.performance-test {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    z-index: 1;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+    max-height: 100vh;
+    overflow-y: auto;
+    user-select: none;
+    span {
+        cursor: pointer;
+        margin: 1px;
+        word-break: break-word;
+    }
+}
